@@ -101,6 +101,11 @@ def baliho():
     		main()
 
 	except (KeyError,IOError):
+		print R + '_     _'.center(44)
+		print "o' \.=./ `o".center(44)
+		print '(o o)'.center(44)
+		print 'ooO--(_)--Ooo'.center(44)
+		print ('FB HACK BETA').center(44)
 		print R + '_  Login dulu Boy   _'.center(44)
 		login()
 #################################################################
@@ -110,7 +115,7 @@ def baliho():
 #     LOGIN 
 
 def login():
-	
+
 	print '[*] login to your facebook account         ';
 	id = raw_input('[?] Username : ');
 	pwd = getpass.getpass('[?] Password : ');
@@ -155,6 +160,7 @@ def get(data):
 		baliho()
 		main()
 	except KeyError:
+		print 'akun terkena checkpoin, konfrimasi lewat broweser yang aktif'
 		print (R +'[!] Failed to generate access token')
 		print '[!] Check your connection / email or password'
 		os.remove('tes/token.log')
@@ -162,6 +168,7 @@ def get(data):
 		baliho()
 	except requests.exceptions.ConnectionError:
 		print (R +'[!] Failed to generate access token')
+		print 'atau akun terkena checkpoin, konfrimasi lewat broweser yang aktif'
 		print '[!] Connection error !!!'
 		os.remove('tes/token.log')
 		time.sleep(3)
@@ -183,8 +190,6 @@ def main():
 		        print '\x1b[1;91m[!] Token tidak ditemukan'
 		        os.system('rm -rf tes/token.log')
 		        time.sleep(1)
-
-
    		    print 40 * '\x1b[1;97m\xe2\x95\x90'
 		    print ' LIHAT INFORMASI AKUN '
 		    print 40 * '\x1b[1;97m\xe2\x95\x90'
