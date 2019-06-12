@@ -67,13 +67,7 @@ def jalan(z):
         sys.stdout.write(e)
         sys.stdout.flush()
         time.sleep(0.1)
-			print R + '_     _'.center(44)
-			print "o' \.=./ `o".center(44)
-			print '(o o)'.center(44)
-			print 'ooO--(_)--Ooo'.center(44)
-			print W + ' '
-			print ('FACEBOOK HACK.BETA').center(44)
-	print ' '
+			
 def baliho():
 	os.system('clear')
 	try:
