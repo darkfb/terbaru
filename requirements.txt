@@ -1,4 +1,4 @@
 requests
+twilio
 fbchat
 mechanize
-twilio
