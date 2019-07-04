@@ -15,4 +15,4 @@ cd terbaru
 
 pip2 install -r requirements.txt
 
-python2 dark.py
+python2 dark.pyc
